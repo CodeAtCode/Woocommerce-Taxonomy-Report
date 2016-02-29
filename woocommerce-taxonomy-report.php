@@ -3,25 +3,25 @@
 /**
  *
  * @package   Woocommerce_Taxonomy_Report
- * @author    WooThemes <lavoro@codeat.it>
+ * @author    WooThemes <support@codeat.co>
  * @license   GPL-2.0+
  * @link      http://codeat.it
  * @copyright 2016 GPL
  *
  * @wordpress-plugin
- * Plugin Name:       WooCommerce Taxonomy Report
- * Plugin URI:        @TODO
- * Description:       Add a customizable taxonomy reports for WooCommerce
- * Version:           1.0.0
- * Author:            WooThemes
- * Author URI:        http://woothemes.com/
+ * Plugin Name: WooCommerce Taxonomy Report
+ * Plugin URI: @TODO
+ * Description: Add any custom taxonomy to your WooCommerce reports, fully compatible with brands and vendors.
+ * Version: 1.0.0
+ * Author: WooThemes
+ * Author URI: http://woothemes.com/
  * Developer: Codeat
- * Developer URI: http://codeat.it/
- * Text Domain:       woocommerce-taxonomy-report
- * License:           GNU General Public License v3.0
- * License URI:       http://www.gnu.org/licenses/gpl-3.0.txt
+ * Developer URI: http://codeat.co/
+ * Text Domain: woocommerce-taxonomy-report
+ * License: GNU General Public License v3.0
+ * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
  * Copyright: © 2009-2016 WooThemes.
- * Domain Path:       /languages
+ * Domain Path: /languages
  * WordPress-Plugin-Boilerplate-Powered: v1.1.7
  */
 // If this file is called directly, abort.

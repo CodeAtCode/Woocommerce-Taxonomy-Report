@@ -7,21 +7,18 @@ Tested up to: 4.4
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+WC requires at least: 2.2
+WC tested up to: 2.5.2
 
-Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
+Add any custom taxonomy to your WooCommerce reports, fully compatible with brands and vendors plugins.
 
 == Description ==
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
-
-A few notes about the sections above:
-
-*   Add the reports (total or subtotal) for your taxonomies
-*   Create a Brand or Vendors taxonomy with a click
+* Add the reports (total or subtotal) for your custom taxonomies
+* Create a Brand or Vendors taxonomy in a click
+* Fully compatible with other Vendors and Brands Plugins
 
 == Installation ==
-
-This section describes how to install the plugin and get it working.
 
 e.g.
 
@@ -46,35 +43,27 @@ e.g.
 2. Extract the `woocommerce-taxonomy-report` directory to your computer
 3. Upload the `woocommerce-taxonomy-report` directory to the `/wp-content/plugins/` directory
 4. Activate the plugin in the Plugin dashboard
+
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= Where can I add taxonomies to reports? =
 
-An answer to that question.
+You can find all your active taxonomies listed under the Integration Tab in the WooCommerce Settings Panel. Select taxonomies and save.
 
-= What about foo bar? =
+= Where can I add Brands and/or Vendors taxonomies to WooCommerce? =
 
-Answer to foo bar dilemma.
+Under the Integration Tab, in the WooCommerce Settings Panel, select taxonomies you need to add to your store and save.
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+1. Custom Taxonomy Brand Report
+2. Custom Taxonomy Vendor Report
+3. Setting Panel Under Integration Tab
 
 == Changelog ==
 
 = 1.0 =
-* A change since the previous version.
-* Another change.
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation."  Arbitrary sections will be shown below the built-in sections outlined above.
+* First release
 
 == Updates ==
 
