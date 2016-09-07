@@ -53,7 +53,7 @@ class Woocommerce_Taxonomy_Report {
 	 */
 	private function __construct() {
 		$taxonomies = get_option( 'woocommerce_taxonomy-report_settings', null );
-		if ( isset( $taxonomies [ 'chosen' ] ) ) {
+		if ( isset( $taxonomies [ 'chosen' ] ) && is_array($taxonomies [ 'chosen' ]) ) {
 			$taxonomies = $taxonomies [ 'chosen' ];
 			foreach ( $taxonomies as $taxonomy ) {
 				register_via_taxonomy_core(
