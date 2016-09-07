@@ -34,7 +34,7 @@ class WC_Integration_TReport extends WC_Integration {
 			$product_tags[ $taxonomy->query_var ] = $taxonomy->label;
 		}
 		$taxonomies = get_option( 'woocommerce_taxonomy-report_settings', null );
-		if ( isset( $taxonomies [ 'chosen' ] ) ) {
+		if ( isset( $taxonomies [ 'chosen' ] ) && is_array($taxonomies [ 'chosen' ]) ) {
 			$taxonomies = $taxonomies [ 'chosen' ];
 			foreach ( $taxonomies as $taxonomy ) {
 				$product_tags[ $taxonomy ] = ucfirst( $taxonomy );
