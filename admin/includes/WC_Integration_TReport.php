@@ -28,6 +28,7 @@ class WC_Integration_TReport extends WC_Integration {
     $taxonomies = get_object_taxonomies( 'product', 'objects' );
     unset( $taxonomies[ 'product_shipping_class' ] );
     unset( $taxonomies[ 'product_type' ] );
+    unset( $taxonomies[ 'product_attributes' ] );
     unset( $taxonomies[ 'pa_color' ] );
     $product_tags = array();
     foreach ( $taxonomies as $taxonomy ) {
