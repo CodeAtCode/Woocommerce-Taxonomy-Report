@@ -1,16 +1,16 @@
 <?php
 
 /**
- * WooCommerce Taxonomy Report
+ * Woo Taxonomy Report
  *
- * @package   Woocommerce_Taxonomy_Report
+ * @package   Woo_Taxonomy_Report
  * @author    Codeat <support@codeat.co>
  * @license   GPL-2.0+
  * @link      http://codeat.it
  * @copyright 2016 GPL
  */
 
-class Woocommerce_Taxonomy_Report {
+class Woo_Taxonomy_Report {
 
 	/**
 	 * Unique identifier for your plugin.
@@ -24,7 +24,7 @@ class Woocommerce_Taxonomy_Report {
 	 *
 	 * @var      string
 	 */
-	protected static $plugin_slug = 'woocommerce-taxonomy-report';
+	protected static $plugin_slug = 'woo-taxonomy-report';
 
 	/**
 	 * Instance of this class.

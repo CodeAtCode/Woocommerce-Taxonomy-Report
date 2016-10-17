@@ -4,7 +4,7 @@ class TReport_Cloud_Widget extends WPH_Widget {
 
     function __construct() {
 
-        $plugin = Woocommerce_Taxonomy_Report::get_instance();
+        $plugin = Woo_Taxonomy_Report::get_instance();
         $this->plugin_slug = $plugin->get_plugin_slug();
 
         // Configure widget array

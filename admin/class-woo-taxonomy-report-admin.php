@@ -1,16 +1,16 @@
 <?php
 
 /**
- * WooCommerce Taxonomy Report
+ * Woo Taxonomy Report
  *
- * @package   Woocommerce_Taxonomy_Report_Admin
+ * @package   Woo_Taxonomy_Report_Admin
  * @author    Codeat <support@codeat.co>
  * @license   GPL-2.0+
  * @link      http://codeat.it
  * @copyright 2016 GPL
  */
 
-class Woocommerce_Taxonomy_Report_Admin {
+class Woo_Taxonomy_Report_Admin {
 
 	/**
 	 * Instance of this class.

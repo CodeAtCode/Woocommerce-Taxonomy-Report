@@ -13,8 +13,8 @@ class WC_Integration_TReport extends WC_Integration {
   public function __construct() {
     global $woocommerce;
     $this->id = 'taxonomy-report';
-    $this->method_title = __( 'Taxonomy Report', 'woocommerce-taxonomy-report' );
-    $this->method_description = __( 'Add reports based on taxonomies.', 'woocommerce-taxonomy-report' );
+    $this->method_title = __( 'Taxonomy Report', 'woo-taxonomy-report' );
+    $this->method_description = __( 'Add reports based on taxonomies.', 'woo-taxonomy-report' );
     // Actions.
     add_action( 'woocommerce_update_options_integration_' . $this->id, array( $this, 'process_admin_options' ) );
     add_filter( 'woocommerce_admin_reports', __CLASS__ . '::add_reports' );
@@ -43,19 +43,19 @@ class WC_Integration_TReport extends WC_Integration {
     }
     $this->form_fields = array(
 	  'selected' => array(
-		'title' => __( 'Taxonomies', 'woocommerce-taxonomy-report' ),
+		'title' => __( 'Taxonomies', 'woo-taxonomy-report' ),
 		'type' => 'multiselect',
-		'description' => __( 'Pick multiple taxonomies with ctrl key', 'woocommerce-taxonomy-report' ),
+		'description' => __( 'Pick multiple taxonomies with ctrl key', 'woo-taxonomy-report' ),
 		'options' => $product_tags,
 	  ),
 	  'chosen' => array(
-		'title' => __( 'Create new Taxonomies for WooCommerce', 'woocommerce-taxonomy-report' ),
+		'title' => __( 'Create new Taxonomies for WooCommerce', 'woo-taxonomy-report' ),
 		'type' => 'multiselect',
-		'description' => __( 'Pick multiple taxonomies with ctrl key', 'woocommerce-taxonomy-report' ),
+		'description' => __( 'Pick multiple taxonomies with ctrl key', 'woo-taxonomy-report' ),
 		'options' => array(
-		    'brand' => __( 'Brands', 'woocommerce-taxonomy-report' ), 'vendor' => __( 'Vendors', 'woocommerce-taxonomy-report' ),
-		    'artist' => __( 'Artist', 'woocommerce-taxonomy-report' ), 'author' => __( 'Author', 'woocommerce-taxonomy-report' ),
-		    'state' => __( 'State', 'woocommerce-taxonomy-report' ), 'city' => __( 'City', 'woocommerce-taxonomy-report' )
+		    'brand' => __( 'Brands', 'woo-taxonomy-report' ), 'vendor' => __( 'Vendors', 'woo-taxonomy-report' ),
+		    'artist' => __( 'Artist', 'woo-taxonomy-report' ), 'author' => __( 'Author', 'woo-taxonomy-report' ),
+		    'state' => __( 'State', 'woo-taxonomy-report' ), 'city' => __( 'City', 'woo-taxonomy-report' )
 		),
 	  ),
     );
@@ -88,13 +88,13 @@ class WC_Integration_TReport extends WC_Integration {
 		  'title' => $name,
 		  'reports' => array(
 			"sales_by_" . $taxonomy => array(
-			    'title' => __( $name, 'woocommerce-taxonomy-report' ) . ' ' . __( 'Total', 'woocommerce-taxonomy-report' ),
+			    'title' => __( $name, 'woo-taxonomy-report' ) . ' ' . __( 'Total', 'woo-taxonomy-report' ),
 			    'description' => '',
 			    'hide_title' => true,
 			    'callback' => array( __CLASS__, 'get_report' )
 			),
 			"sales_subtotal_by_" . $taxonomy => array(
-			    'title' => __( $name, 'woocommerce-taxonomy-report' ) . ' ' . __( 'SubTotal', 'woocommerce-taxonomy-report' ),
+			    'title' => __( $name, 'woo-taxonomy-report' ) . ' ' . __( 'SubTotal', 'woo-taxonomy-report' ),
 			    'description' => '',
 			    'hide_title' => true,
 			    'callback' => array( __CLASS__, 'get_report_subtotal' )

@@ -9,13 +9,13 @@
  * @copyright 2016 GPL
  *
  * @wordpress-plugin
- * Plugin Name: WooCommerce Taxonomy Report
+ * Plugin Name: Woo Taxonomy Report
  * Plugin URI: @TODO
  * Description: Add any custom taxonomy to your WooCommerce reports, fully compatible with brands and vendors.
  * Version: 1.0.0
  * Author: Codeat
  * Author URI: http://codeat.co/
- * Text Domain: woocommerce-taxonomy-report
+ * Text Domain: woo-taxonomy-report
  * License: GNU General Public License v3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
  * Domain Path: /languages
@@ -37,14 +37,14 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
     require_once( plugin_dir_path( __FILE__ ) . 'includes/Widgets-Helper/wph-widget-class.php' );
     require_once( plugin_dir_path( __FILE__ ) . 'includes/widgets/wc_tax.php' );
 
-    require_once( plugin_dir_path( __FILE__ ) . 'public/class-woocommerce-taxonomy-report.php' );
+    require_once( plugin_dir_path( __FILE__ ) . 'public/class-woo-taxonomy-report.php' );
     /*
      * - 9999 is used for load the plugin as last for resolve some
      *   problems when the plugin use API of other plugins, remove
      *   if you don' want this
      */
 
-    add_action( 'plugins_loaded', array( 'Woocommerce_Taxonomy_Report', 'get_instance' ), 9999 );
+    add_action( 'plugins_loaded', array( 'Woo_Taxonomy_Report', 'get_instance' ), 9999 );
 
     /*
      * -----------------------------------------------------------------------------
@@ -53,7 +53,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
      */
 
     if ( is_admin() && (!defined( 'DOING_AJAX' ) || !DOING_AJAX ) ) {
-        require_once( plugin_dir_path( __FILE__ ) . 'admin/class-woocommerce-taxonomy-report-admin.php' );
-        add_action( 'plugins_loaded', array( 'Woocommerce_Taxonomy_Report_Admin', 'get_instance' ) );
+        require_once( plugin_dir_path( __FILE__ ) . 'admin/class-woo-taxonomy-report-admin.php' );
+        add_action( 'plugins_loaded', array( 'Woo_Taxonomy_Report_Admin', 'get_instance' ) );
     }
 }
