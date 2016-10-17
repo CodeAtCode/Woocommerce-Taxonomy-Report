@@ -4,22 +4,12 @@
  * WooCommerce Taxonomy Report
  *
  * @package   Woocommerce_Taxonomy_Report
- * @author    WooThemes <lavoro@codeat.it>
+ * @author    Codeat <support@codeat.co>
  * @license   GPL-2.0+
  * @link      http://codeat.it
  * @copyright 2016 GPL
  */
 
-/**
- * Plugin class. This class should ideally be used to work with the
- * public-facing side of the WordPress site.
- *
- * If you're interested in introducing administrative or dashboard
- * functionality, then refer to `class-woocommerce-taxonomy-report-admin.php`
- *
- * @package Woocommerce_Taxonomy_Report
- * @author  WooThemes <lavoro@codeat.it>
- */
 class Woocommerce_Taxonomy_Report {
 
 	/**

@@ -14,7 +14,7 @@
  * - Repeat things for multisite. Once for a single site in the network, once sitewide.
  *
  * @package   Woocommerce_Taxonomy_Report
- * @author    WooThemes <lavoro@codeat.it>
+ * @author    Codeat <support@codeat.co>
  * @license   GPL-2.0+
  * @link      http://codeat.it
  * @copyright 2016 GPL
