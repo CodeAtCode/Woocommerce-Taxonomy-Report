@@ -17,7 +17,7 @@ class WC_Integration_TReport extends WC_Integration {
     $this->method_description = __( 'Add reports based on taxonomies.', 'woo-taxonomy-report' );
     // Actions.
     add_action( 'woocommerce_update_options_integration_' . $this->id, array( $this, 'process_admin_options' ) );
-    add_filter( 'woocommerce_admin_reports', __CLASS__ . '::add_reports' );
+    add_filter( 'woocommerce_admin_reports', array( $this, 'add_reports' ) );
     add_action( 'woocommerce_after_register_taxonomy', array( $this, 'load_taxonomies_by_wc' ) );
   }
 
@@ -68,6 +68,14 @@ class WC_Integration_TReport extends WC_Integration {
     // Load the settings.
     $this->init_form_fields();
     $this->init_settings();
+  }
+
+  /**
+   * Output the gateway settings screen.
+   */
+  public function admin_options() {
+    parent::admin_options();
+    include('sidebar.php');
   }
 
   /**

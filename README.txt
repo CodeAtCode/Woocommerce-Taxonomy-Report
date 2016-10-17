@@ -33,15 +33,15 @@ e.g.
 
 1. Navigate to the 'Add New' in the plugins dashboard
 2. Navigate to the 'Upload' area
-3. Select `woocommerce-taxonomy-report.zip` from your computer
+3. Select `woo-taxonomy-report.zip` from your computer
 4. Click 'Install Now'
 5. Activate the plugin in the Plugin dashboard
 
 = Using FTP =
 
-1. Download `woocommerce-taxonomy-report.zip`
-2. Extract the `woocommerce-taxonomy-report` directory to your computer
-3. Upload the `woocommerce-taxonomy-report` directory to the `/wp-content/plugins/` directory
+1. Download `woo-taxonomy-report.zip`
+2. Extract the `woo-taxonomy-report` directory to your computer
+3. Upload the `woo-taxonomy-report` directory to the `/wp-content/plugins/` directory
 4. Activate the plugin in the Plugin dashboard
 
 == Frequently Asked Questions ==
@@ -64,7 +64,3 @@ Under the Integration Tab, in the WooCommerce Settings Panel, select taxonomies 
 
 = 1.0 =
 * First release
-
-== Updates ==
-
-The basic structure of this plugin was cloned from the [WordPress-Plugin-Boilerplate](https://github.com/tommcfarlin/WordPress-Plugin-Boilerplate) project.
