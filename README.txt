@@ -3,24 +3,24 @@ Contributors: Mte90, Codeat
 Donate link: http://codeat.it/
 Tags: woocommerce, reports
 Requires at least: 4.4
-Tested up to: 4.4
+Tested up to: 4.6
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 WC requires at least: 2.2
-WC tested up to: 2.5.2
+WC tested up to: 2.6.7
 
-Add any custom taxonomy to your WooCommerce reports, fully compatible with brands and vendors plugins.
+Add any custom taxonomy to your WooCommerce reports, also with tag. It comes with some optionally usefull extra taxonomies like brands.
 
 == Description ==
 
-* Add the reports (total or subtotal) for your custom taxonomies
-* Create a Brand or Vendors taxonomy in a click
+* Add the reports (total or subtotal) for any custom taxonomies (also protuct tag)
+* Create Brands, Vendors, Artist, Authors, State and/or City taxonomy in a click
 * Fully compatible with other Vendors and Brands Plugins
 
-== Installation ==
+[GitHub Plugin's Page](https://github.com/CodeAtCode/Woocommerce-Taxonomy-Report) - [Open an Issue on GitHub](https://github.com/CodeAtCode/Woocommerce-Taxonomy-Report/issues)
 
-e.g.
+== Installation ==
 
 = Using The WordPress Dashboard =
 
@@ -53,6 +53,7 @@ You can find all your active taxonomies listed under the Integration Tab in the 
 = Where can I add Brands and/or Vendors taxonomies to WooCommerce? =
 
 Under the Integration Tab, in the WooCommerce Settings Panel, select taxonomies you need to add to your store and save.
+For multiselect just keep pressing ctrl while you are selecting more than one taxonomy.
 
 == Screenshots ==
 
