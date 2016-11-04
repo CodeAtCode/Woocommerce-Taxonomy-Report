@@ -7,8 +7,6 @@ Tested up to: 4.6
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-WC requires at least: 2.2
-WC tested up to: 2.6.7
 
 Add any custom taxonomy to your WooCommerce reports, also with tag. It comes with some optionally usefull extra taxonomies like brands.
 
