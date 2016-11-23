@@ -27,7 +27,7 @@ if ( !defined( 'WPINC' ) ) {
 }
 
 /* Check if WooCommerce is active */
-if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+if( is_plugin_active( 'woocommerce/woocommerce.php' ) ){
     /*
      * Load library for simple and fast creation of Taxonomy 
      */
