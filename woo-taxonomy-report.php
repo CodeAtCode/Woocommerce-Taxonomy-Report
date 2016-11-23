@@ -27,9 +27,11 @@ if ( !defined( 'WPINC' ) ) {
 }
 
 if ( !function_exists( 'woo_is_plugin_active' ) ) {
-  function woo_is_plugin_active( ) {
+
+  function woo_is_plugin_active() {
     return in_array( 'woocommerce/woocommerce.php', ( array ) get_option( 'active_plugins', array() ) ) || is_plugin_active_for_network( 'woocommerce/woocommerce.php' );
   }
+
 }
 
 /* Check if WooCommerce is active */
@@ -58,8 +60,14 @@ if ( woo_is_plugin_active() ) {
    * -----------------------------------------------------------------------------
    */
 
-  if ( is_admin() && (!defined( 'DOING_AJAX' ) || !DOING_AJAX ) ) {
-    require_once( plugin_dir_path( __FILE__ ) . 'admin/class-woo-taxonomy-report-admin.php' );
-    add_action( 'plugins_loaded', array( 'Woo_Taxonomy_Report_Admin', 'get_instance' ) );
+  if ( is_admin() ) {
+    require_once( plugin_dir_path( __FILE__ ) . 'admin/includes/WP-Dismissible-Notices-Handler/handler.php' );
+    require_once( plugin_dir_path( __FILE__ ) . 'admin/includes/WP_Review_Me.php' );
+    new WP_Review_Me( array( 'days_after' => 10, 'type' => 'plugin', 'slug' => 'woo-taxonomy-report', 'message' => __( 'Hey! It\'s been a little while that you\'ve been using WooCommerce Taxonomy Report. You might not realize it, but user reviews are such a great help to us. We would be so grateful if you could take a minute to leave a review on WordPress.org.<br>Many thanks in advance :)<br>', 'woo-taxonomy-report' ) ) );
+
+    if ( (!defined( 'DOING_AJAX' ) || !DOING_AJAX ) ) {
+	require_once( plugin_dir_path( __FILE__ ) . 'admin/class-woo-taxonomy-report-admin.php' );
+	add_action( 'plugins_loaded', array( 'Woo_Taxonomy_Report_Admin', 'get_instance' ) );
+    }
   }
 }

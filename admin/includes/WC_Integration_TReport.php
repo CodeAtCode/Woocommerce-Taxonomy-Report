@@ -11,7 +11,6 @@ class WC_Integration_TReport extends WC_Integration {
    * Init and hook in the integration.
    */
   public function __construct() {
-    global $woocommerce;
     $this->id = 'taxonomy-report';
     $this->method_title = __( 'Taxonomy Report', 'woo-taxonomy-report' );
     $this->method_description = __( 'Add reports based on taxonomies.', 'woo-taxonomy-report' );
@@ -75,7 +74,6 @@ class WC_Integration_TReport extends WC_Integration {
    */
   public function admin_options() {
     parent::admin_options();
-    include('sidebar.php');
   }
 
   /**

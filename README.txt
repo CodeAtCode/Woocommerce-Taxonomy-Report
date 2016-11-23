@@ -61,5 +61,9 @@ For multiselect just keep pressing ctrl while you are selecting more than one ta
 
 == Changelog ==
 
+= 1.0.1 =
+* Improvement on WooCommerce detection also on multiste
+* Removed sidebar in settings that creates problems on saving
+
 = 1.0 =
 * First release
