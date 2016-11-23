@@ -99,11 +99,11 @@
 	  <div class="postbox codeat">
 		<h3 class="hndle"><span><?php _e( 'A Codeat Plugin', 'woo-taxonomy-report' ); ?></span></h3>
 		<div class="inside">
-		    <a href="http://codeat.co" target="_blank"><img src="http://i2.wp.com/codeat.co/wp-content/uploads/2016/02/cropped-logo-light.png?w=236" alt="Codeat"></a>
-		    <a href="http://codeat.co/track-changes/" target="_blank"><img src="http://i2.wp.com/codeat.co/woo-fiscalita-italiana/wp-content/uploads/sites/6/2016/05/cropped-Fiscalita%CC%80Italiana_logo-ori-Lite.png?w=236" alt="Woo Fiscalità Italiana For WordPress"></a>
-		    <a href="http://codeat.co/glossary/" target="_blank"><img src="http://i0.wp.com/codeat.co/glossary/wp-content/uploads/sites/3/2016/02/cropped-Glossary_logo-ori-Lite-1.png?w=236" alt="Glossary For WordPress"></a>
-		    <a href="http://codeat.co/pinit/" target="_blank"><img src="http://i1.wp.com/codeat.co/pinit/wp-content/uploads/sites/2/2016/02/cropped-PinterestForWP_logo-ori-Lite-1.png?w=236" alt="Pinterest for WordPress"></a>
-		    <a href="http://codeat.co/video-ad/" target="_blank"><img src="http://i1.wp.com/codeat.co/video-ad/wp-content/uploads/sites/4/2016/02/cropped-VideoAd_logo-ori-Lite.png?w=236" alt="Video Ad Plugin For WordPress"></a>
+		    <a href="http://codeat.co" target="_blank"><img src="//i2.wp.com/codeat.co/wp-content/uploads/2016/02/cropped-logo-light.png?w=236" alt="Codeat"></a>
+		    <a href="http://codeat.co/track-changes/" target="_blank"><img src="//i2.wp.com/codeat.co/woo-fiscalita-italiana/wp-content/uploads/sites/6/2016/05/cropped-Fiscalita%CC%80Italiana_logo-ori-Lite.png?w=236" alt="Woo Fiscalità Italiana For WordPress"></a>
+		    <a href="http://codeat.co/glossary/" target="_blank"><img src="//i0.wp.com/codeat.co/glossary/wp-content/uploads/sites/3/2016/02/cropped-Glossary_logo-ori-Lite-1.png?w=236" alt="Glossary For WordPress"></a>
+		    <a href="http://codeat.co/pinit/" target="_blank"><img src="//i1.wp.com/codeat.co/pinit/wp-content/uploads/sites/2/2016/02/cropped-PinterestForWP_logo-ori-Lite-1.png?w=236" alt="Pinterest for WordPress"></a>
+		    <a href="http://codeat.co/video-ad/" target="_blank"><img src="//i1.wp.com/codeat.co/video-ad/wp-content/uploads/sites/4/2016/02/cropped-VideoAd_logo-ori-Lite.png?w=236" alt="Video Ad Plugin For WordPress"></a>
 		</div>
 	  </div>
     </div>
@@ -112,9 +112,9 @@
 	  <div class="postbox codeat social">
 		<h3 class="hndle"><span><?php _e( 'Follow us', 'woo-taxonomy-report' ); ?></span></h3>
 		<div class="inside">
-		    <a href="https://facebook.com/codeatco/" target="_blank"><img src="http://i2.wp.com/codeat.co/wp-content/uploads/2016/02/social-facebook.png?w=52" alt="facebook"></a>
-		    <a href="https://twitter.com/codeatco/" target="_blank"><img src="http://i0.wp.com/codeat.co/wp-content/uploads/2016/02/social-twitter.png?w=52" alt="twitter"></a>
-		    <a href="https://linkedin.com/company/codeat/" target="_blank"><img src="http://i1.wp.com/codeat.co/wp-content/uploads/2016/02/social-linkedin.png?w=52" alt="linkedin"></a>
+		    <a href="https://facebook.com/codeatco/" target="_blank"><img src="//i2.wp.com/codeat.co/wp-content/uploads/2016/02/social-facebook.png?w=52" alt="facebook"></a>
+		    <a href="https://twitter.com/codeatco/" target="_blank"><img src="//i0.wp.com/codeat.co/wp-content/uploads/2016/02/social-twitter.png?w=52" alt="twitter"></a>
+		    <a href="https://linkedin.com/company/codeat/" target="_blank"><img src="//i1.wp.com/codeat.co/wp-content/uploads/2016/02/social-linkedin.png?w=52" alt="linkedin"></a>
 		</div>
 	  </div>
     </div>
