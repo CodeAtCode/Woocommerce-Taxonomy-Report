@@ -23,37 +23,43 @@
  */
 // If this file is called directly, abort.
 if ( !defined( 'WPINC' ) ) {
-    die;
+  die;
+}
+
+if ( !function_exists( 'woo_is_plugin_active' ) ) {
+  function woo_is_plugin_active( ) {
+    return in_array( 'woocommerce/woocommerce.php', ( array ) get_option( 'active_plugins', array() ) ) || is_plugin_active_for_network( 'woocommerce/woocommerce.php' );
+  }
 }
 
 /* Check if WooCommerce is active */
-if( is_plugin_active( 'woocommerce/woocommerce.php' ) ){
-    /*
-     * Load library for simple and fast creation of Taxonomy 
-     */
+if ( woo_is_plugin_active() ) {
+  /*
+   * Load library for simple and fast creation of Taxonomy 
+   */
 
-    require_once( plugin_dir_path( __FILE__ ) . 'includes/Taxonomy_Core/Taxonomy_Core.php' );
+  require_once( plugin_dir_path( __FILE__ ) . 'includes/Taxonomy_Core/Taxonomy_Core.php' );
 
-    require_once( plugin_dir_path( __FILE__ ) . 'includes/Widgets-Helper/wph-widget-class.php' );
-    require_once( plugin_dir_path( __FILE__ ) . 'includes/widgets/wc_tax.php' );
+  require_once( plugin_dir_path( __FILE__ ) . 'includes/Widgets-Helper/wph-widget-class.php' );
+  require_once( plugin_dir_path( __FILE__ ) . 'includes/widgets/wc_tax.php' );
 
-    require_once( plugin_dir_path( __FILE__ ) . 'public/class-woo-taxonomy-report.php' );
-    /*
-     * - 9999 is used for load the plugin as last for resolve some
-     *   problems when the plugin use API of other plugins, remove
-     *   if you don' want this
-     */
+  require_once( plugin_dir_path( __FILE__ ) . 'public/class-woo-taxonomy-report.php' );
+  /*
+   * - 9999 is used for load the plugin as last for resolve some
+   *   problems when the plugin use API of other plugins, remove
+   *   if you don' want this
+   */
 
-    add_action( 'plugins_loaded', array( 'Woo_Taxonomy_Report', 'get_instance' ), 9999 );
+  add_action( 'plugins_loaded', array( 'Woo_Taxonomy_Report', 'get_instance' ), 9999 );
 
-    /*
-     * -----------------------------------------------------------------------------
-     * Dashboard and Administrative Functionality
-     * -----------------------------------------------------------------------------
-     */
+  /*
+   * -----------------------------------------------------------------------------
+   * Dashboard and Administrative Functionality
+   * -----------------------------------------------------------------------------
+   */
 
-    if ( is_admin() && (!defined( 'DOING_AJAX' ) || !DOING_AJAX ) ) {
-        require_once( plugin_dir_path( __FILE__ ) . 'admin/class-woo-taxonomy-report-admin.php' );
-        add_action( 'plugins_loaded', array( 'Woo_Taxonomy_Report_Admin', 'get_instance' ) );
-    }
+  if ( is_admin() && (!defined( 'DOING_AJAX' ) || !DOING_AJAX ) ) {
+    require_once( plugin_dir_path( __FILE__ ) . 'admin/class-woo-taxonomy-report-admin.php' );
+    add_action( 'plugins_loaded', array( 'Woo_Taxonomy_Report_Admin', 'get_instance' ) );
+  }
 }
