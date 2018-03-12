@@ -12,7 +12,7 @@
  * Plugin Name: Woo Taxonomy Report
  * Plugin URI: @TODO
  * Description: Add any custom taxonomy to your WooCommerce reports, fully compatible with brands and vendors.
- * Version: 1.0.0
+ * Version: 1.0.2
  * Author: Codeat
  * Author URI: http://codeat.co/
  * Text Domain: woo-taxonomy-report

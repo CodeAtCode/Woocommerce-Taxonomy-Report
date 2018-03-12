@@ -4,7 +4,7 @@ Donate link: https://codeat.co/
 Tags: woocommerce, reports
 Requires at least: 4.7
 Tested up to: 4.9
-Stable tag: 1.0.0
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,6 +60,9 @@ For multiselect just keep pressing ctrl while you are selecting more than one ta
 3. Setting Panel Under Integration Tab
 
 == Changelog ==
+
+= 1.0.2 =
+* Fix to avoid loop on refresh tab
 
 = 1.0.1 =
 * Improvement on WooCommerce detection also on multiste
