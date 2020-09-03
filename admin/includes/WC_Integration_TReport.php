@@ -82,7 +82,7 @@ class WC_Integration_TReport extends WC_Integration {
 	 * @return arr Modified reports
 	 */
 	public static function add_reports( $reports ) {
-		if ( current_user_can( 'manage_options' ) ) {
+		if ( current_user_can( 'manage_woocommerce' ) ) {
 			//get_option of WC_settings class not work with static method required for the reports part
 			$taxonomies = get_option( 'woocommerce_taxonomy-report_settings', null );
 			if ( isset( $taxonomies [ 'selected' ] ) ) {
