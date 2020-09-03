@@ -4,7 +4,7 @@ Donate link: https://codeat.co/
 Tags: woocommerce, reports
 Requires at least: 4.7
 Tested up to: 4.9
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,9 @@ For multiselect just keep pressing ctrl while you are selecting more than one ta
 
 == Changelog ==
 
+= 1.0.2 =
+* Use `manage_woocommerce` for permissions instead of just admin users
+* 
 = 1.0.2 =
 * Fix to avoid loop on refresh tab
 
