@@ -53,6 +53,10 @@ class TReport_Cloud_Widget extends WPH_Widget {
         $out .= $instance[ 'title' ];
         $out .= $args[ 'after_title' ];
         echo $out;
+        
+        if ( !isset( $instance[ 'amount' ] ) ) {
+            $instance[ 'amount' ] = 0;
+        }
 
         wp_tag_cloud( array( 'taxonomy' => $instance[ 'taxonomy' ], 'number' => $instance[ 'amount' ] ) );
 
